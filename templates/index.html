@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug_Prediction</title>
+</head>
+<body>
+    <h1>Drug Prediction</h1>
+    <form action="{{url_for( 'home')}}" method="post">
+        <label>Enter Age :</label>
+        <input name="age">
+         
+        <br>
+        <label>Enter Sex :</label>
+        <input name="sex" placeholder="F/M">
+        <br>
+        <label>Enter BloodPressure :</label>
+        <input name="bp" placeholder="LOW/NORMAL/HIGH">
+        <br>
+        <label>Enter Cholesterol :</label>
+        <input name="cholestrol" placeholder="NORMAL/HIGH">
+        <br>
+        <label>Enter Na_to_K :</label>
+        <input name="na_to_k">
+        <br>
+        <input type="submit">
+        <br>
+        <h3>Drug Class : {{result}}</h3>
+    </form>
+</body>
+</html>
